@@ -1,0 +1,35 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Utils Collection For Building Front End Application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "docco underscore.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esfak47/utils.git"
+  },
+  "keywords": [
+    "utils",
+    "javascript"
+  ],
+  "author": "esfak47@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esfak47/utils/issues"
+  },
+  "homepage": "https://github.com/esfak47/utils#readme",
+  "devDependencies": {
+    "docco": "^0.7.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
