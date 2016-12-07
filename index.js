@@ -1,3 +1,10 @@
+/*
+ * Utils
+ * (c) 2016 Tony Wang
+ * Version '1.0.0'
+ * @preserve
+ */
+
 (function () {
 
   var root = this;
@@ -15,16 +22,12 @@
     this._wrapped = obj;
   };
 
-  if (typeof exports !== 'undefined' && !exports.nodeType) {
-    if (typeof module !== 'undefined' && !module.nodeType && module.exports) {
-      exports = module.exports = _;
-    }
-    exports.u = _;
-  } else {
-    root.u = _;
-  }
-
   _.__ver__ = '1.0.0';
-  _.ToNumber = require('./src/string/toNumber');
+  _.toNumber = require('./src/string/toNumber');
 
-}).call(this);
+  if (typeof window === 'undefined') {
+    root.u = _;
+  } else {
+    module.exports = _;
+  }
+})();

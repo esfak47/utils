@@ -1,0 +1,9 @@
+.eslintrc.js
+gulpfile.js
+meteor-*.js
+package.js
+dist/**
+test/**
+scripts/**
+coverage/**
+node_modules/**
