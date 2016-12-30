@@ -6,7 +6,7 @@
  */
 
 (function () {
-
+  require('babel-polyfill');
   var root = this;
 
   /**
@@ -22,10 +22,13 @@
     this._wrapped = obj;
   };
 
+  var underscore = require('underscore');
+  underscore.extend(_, underscore);
   _.__ver__ = '1.0.0';
-  _.toNumber = require('./src/string/toNumber');
+  _.toNumber = require('./lib/string/toNumber');
+  _.getTimeDiff = require('./lib/date/getTimeDiff');
 
-  if (typeof window === 'undefined') {
+  if (typeof window !== 'undefined') {
     root.u = _;
   } else {
     module.exports = _;
